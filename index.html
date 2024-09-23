@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogram</title>
+    <link rel="shortcut icon" href="./img/logo/favicon_fotogram.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body onload="render()">
+
+    <!-- Header -->
+    <header>
+        <img src="./img/logo/logo_fotogram.svg" alt="Fotogram logo">
+    </header>
+
+    <div class="slanted-header-bottom"></div>
+
+    <!-- Main Content -->
+    <section id="gallery">
+        <div id="gallery-wrapper"></div>
+    </section>
+
+    <!-- Footer -->
+    <div class="slanted-footer-top"></div>
+
+    <footer>
+        <img src="./img/logo/favicon_fotogram.png" alt="Fotogram logo">
+        <div> Icons from <a href="https://www.flaticon.com/de/">flaticon</a> | Images from <a href="https://pixabay.com/de/">Pixabay</a></div>
+    </footer>
+
+    <!-- Fullscreen View of Image/Overlay Modal -->
+    <div id="overlay-modal" class="overlay display-none" onclick="toggleOverlay('')">
+        <div class="overlay-wrapper">
+            <div class="overlay-image" onclick="event.stopPropagation()">
+                <img id="fullscreen-image" src=" ">
+            </div>
+            <div class="overlay-buttons" onclick="event.stopPropagation()">
+                <img onclick="fullscreenPreviousImage()" class="arrows" src="./img/arrow-back.png" alt="Back">
+                <img onclick="toggleOverlay()" class="close-btn" src="./img/close.png" alt="Close">
+                <img onclick="fullscreenNextImage()" class="arrows" src="./img/arrow-next.png" alt="Next">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- <div> Icons erstellt von <a href="https://www.flaticon.com/de/autoren/critical-icon" title="Critical icon"> Critical icon </a> from <a href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com'</a></div> -->
+
+
+<!-- <div class="image-container" onclick="toggleOverlay('./img/gallery/img_0.png')"><img src="./img/gallery/img_0.png" alt=""></div>
+        <div class="image-container" onclick="toggleOverlay('./img/gallery/img_1.png')"><img src="./img/gallery/img_1.png" alt=""></div>
+        <div class="image-container" onclick="toggleOverlay('./img/gallery/img_2.png')"><img src="./img/gallery/img_2.png" alt=""></div>
+        <div class="image-container" onclick="toggleOverlay('./img/gallery/img_3.jpg')"><img src="./img/gallery/img_3.jpg" alt=""></div>
+        <div class="image-container" onclick="toggleOverlay('./img/gallery/img_4.jpg')"><img src="./img/gallery/img_4.jpg" alt=""></div>
+        <div class="image-container" onclick="toggleOverlay('./img/gallery/img_5.jpg')"><img src="./img/gallery/img_5.jpg" alt=""></div>
+        <div class="image-container" onclick="toggleOverlay('./img/gallery/img_6.png')"><img src="./img/gallery/img_6.png" alt=""></div>
+        <div class="image-container" onclick="toggleOverlay('./img/gallery/img_7.jpg')"><img src="./img/gallery/img_7.jpg" alt=""></div>
+        <div class="image-container" onclick="toggleOverlay('./img/gallery/img_8.jpg')"><img src="./img/gallery/img_8.jpg" alt=""></div>
+        <div class="image-container" onclick="toggleOverlay('./img/gallery/img_9.jpg')"><img src="./img/gallery/img_9.jpg" alt=""></div>
+        <div class="image-container" onclick="toggleOverlay('./img/gallery/img_10.jpg')"><img src="./img/gallery/img_10.jpg" alt=""></div>
+        <div class="image-container" onclick="toggleOverlay('./img/gallery/img_11.jpg')"><img src="./img/gallery/img_11.jpg" alt=""></div>
+        <div class="image-container" onclick="toggleOverlay('./img/gallery/img_12.jpg')"><img src="./img/gallery/img_12.jpg" alt=""></div>
+        <div class="image-container" onclick="toggleOverlay('./img/gallery/img_13.png')"><img src="./img/gallery/img_13.png" alt=""></div>
+        <div class="image-container" onclick="toggleOverlay('./img/gallery/img_14.png')"><img src="./img/gallery/img_14.png" alt=""></div>
+        <div class="image-container" onclick="toggleOverlay('./img/gallery/img_15.jpg')"><img src="./img/gallery/img_15.jpg" alt=""></div> -->
